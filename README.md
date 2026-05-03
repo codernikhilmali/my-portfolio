@@ -1,73 +1,75 @@
-# React + TypeScript + Vite
+# 🚀 Professional Developer Portfolio | Nikhil Mali
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A high-performance, modern developer portfolio built with **React 19**, **Vite**, and **Tailwind CSS 4**. This portfolio is designed to showcase my expertise as a **Java Backend Developer** with a focus on building scalable systems and elegant user interfaces.
 
-Currently, two official plugins are available:
+![Portfolio Preview](https://img.shields.io/badge/Status-Live-success?style=for-the-badge)
+![Tech Stack](https://img.shields.io/badge/Tech-React%20%7C%20Vite%20%7C%20TS-blue?style=for-the-badge)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+-   **Dynamic Hero Section**: Interactive 3D decorative elements with a professional typewriter effect showcasing core competencies.
+-   **Animated Stats**: Real-time count-up animations for experience, projects, and DSA achievements.
+-   **Project Showcase**: Categorized project grid with filtering (Backend, Full Stack) and elegant hover effects.
+-   **Skill Proficiency**: Visual progress bars and a dedicated tech stack grid using modern SVG icons.
+-   **Responsive Design**: Fully optimized for mobile, tablet, and desktop viewing.
+-   **Interactive Contact Form**: Integrated with Web3Forms for seamless client communication with real-time toast notifications.
+-   **Custom Theme Engine**: Built with a sophisticated CSS variable system for consistent branding.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+-   **Core**: [React 19](https://react.dev/), [TypeScript](https://www.typescriptlang.org/)
+-   **Build Tool**: [Vite 8](https://vitejs.dev/)
+-   **Styling**: [Tailwind CSS 4](https://tailwindcss.com/) (Modern CSS Configuration)
+-   **Animations**: [Framer Motion](https://www.framer.com/motion/)
+-   **Icons**: [Lucide React](https://lucide.dev/)
+-   **Forms**: [Web3Forms API](https://web3forms.com/)
+-   **Notifications**: [React Hot Toast](https://react-hot-toast.com/)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🚀 Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Prerequisites
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+-   [Node.js](https://nodejs.org/) (v18 or higher)
+-   npm (v9 or higher)
+
+### Installation
+
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/your-username/portfolio-website.git
+    ```
+2.  **Navigate to the project directory**:
+    ```bash
+    cd portfolio-website
+    ```
+3.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
+4.  **Start the development server**:
+    ```bash
+    npm run dev
+    ```
+
+## 📦 Build for Production
+
+To create a production-ready bundle:
+
+```bash
+npm run build
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+The optimized files will be generated in the `dist` folder.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🌐 Connect with Me
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+-   **LinkedIn**: [Nikhil Mali](https://www.linkedin.com/in/nikhil-mali-70b79122a/)
+-   **LeetCode**: [nikhilmali1225](https://leetcode.com/u/nikhilmali1225/)
+-   **Instagram**: [@nikhil_mali_17](https://www.instagram.com/nikhil_mali_17/)
+
+---
+
+Crafted with ❤️ by **Nikhil Mali**
+
