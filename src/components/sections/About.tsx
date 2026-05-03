@@ -12,28 +12,28 @@ const stats = [
 
 const experiences = [
   {
-    year: "2024 – Present",
-    role: "Java Backend Developer",
-    company: "Freelance / Contracts",
-    location: "Pune, India",
-    desc: "Architecting and implementing high-performance REST APIs and microservices using Spring Boot and Java 17.",
+    year: "Jan 2024 – Feb 2024",
+    role: "Java Development Intern",
+    company: "Oasis Infobyte",
+    location: "Remote",
+    desc: "Gained hands-on experience in Java development and logic building through real-world assignments.",
     points: [
-      "Designed and deployed scalable microservices architectures.",
-      "Optimized database queries, reducing response time by 30%.",
-      "Integrated third-party APIs and handled complex business logic."
+      "Developed an ATM Interface and an Online Examination System using core Java.",
+      "Applied Object-Oriented Programming (OOP) principles to create modular code.",
+      "Collaborated with mentors to refine application logic and performance."
     ],
     color: "#3b82f6",
   },
   {
-    year: "2023 – 2024",
-    role: "Backend Developer Intern",
-    company: "TechCorp India",
-    location: "Mumbai, India",
-    desc: "Collaborated on production-grade Spring Boot applications focused on high availability.",
+    year: "Dec 2023 – Jan 2024",
+    role: "Java Development Intern",
+    company: "CodSoft",
+    location: "Remote",
+    desc: "Enhanced proficiency in Java and software design patterns through project-based learning.",
     points: [
-      "Developed modular REST controllers and data access layers.",
-      "Identified and fixed 50+ critical bugs in existing services.",
-      "Participated in agile ceremonies and code review processes."
+      "Implemented a robust Word Counter and a dynamic Number Game.",
+      "Explored GUI development using Java Swing for interactive user experiences.",
+      "Focused on clean code practices and comprehensive documentation."
     ],
     color: "#8b5cf6",
   }
@@ -41,28 +41,28 @@ const experiences = [
 
 const education = [
   {
-    year: "2020 – 2024",
-    role: "B.E. Computer Engineering",
-    company: "Pune University",
-    location: "Pune, India",
-    desc: "Graduated with First Class Distinction. Specialised in Software Engineering and Distributed Systems.",
+    year: "2021 – 2025",
+    role: "B.E. Information Technology",
+    company: "Vasantdada Patil Pratishthan's College of Engineering",
+    location: "Mumbai, India",
+    desc: "Currently pursuing engineering with a strong focus on information systems and software development.",
     points: [
-      "Core Subjects: DSA, DBMS, OS, Computer Networks.",
-      "Final Year Project: Microservices-based E-commerce System.",
-      "Won 1st prize in University-level Hackathon 2023."
+      "Current CGPA: 7.90",
+      "Specialized in Software Engineering, DBMS, and Distributed Systems.",
+      "Actively involved in technical events and coding competitions."
     ],
     color: "#06b6d4",
   },
   {
-    year: "2018 – 2020",
+    year: "2019 – 2021",
     role: "HSC (Science)",
-    company: "St. Xavier's Junior College",
-    location: "Pune, India",
-    desc: "Completed Higher Secondary Certificate with focus on Mathematics and Computer Science.",
+    company: "Patkar and Varde College of Science",
+    location: "Mumbai, India",
+    desc: "Completed Higher Secondary education with a focus on Mathematics and Pure Sciences.",
     points: [
-      "Score: 88.5% overall.",
-      "Ranked in top 5% of the batch.",
-      "Member of the Science Club and Chess Team."
+      "Score: 82.67%",
+      "Developed a strong foundation in Physics, Chemistry, and Mathematics.",
+      "Active member of the college science club."
     ],
     color: "#10b981",
   }
