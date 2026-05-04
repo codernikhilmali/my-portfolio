@@ -4,12 +4,30 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const ThemeSettings = () => {
   const [open, setOpen] = useState(false);
+  const [showHint, setShowHint] = useState(false);
   
   // Settings State
   const [color, setColor] = useState(() => localStorage.getItem("theme-color") || "blue");
   const [font, setFont] = useState(() => localStorage.getItem("theme-font") || "inter");
   const [bg, setBg] = useState(() => localStorage.getItem("theme-bg") || "network");
   const [baseBg, setBaseBg] = useState(() => localStorage.getItem("theme-base-bg") || "navy");
+
+  useEffect(() => {
+    // Show hint after 5 seconds, only if not already open
+    const timer = setTimeout(() => {
+      if (!open) setShowHint(true);
+    }, 5000);
+
+    // Hide hint after 11 seconds total (shows for 6s)
+    const hideTimer = setTimeout(() => {
+      setShowHint(false);
+    }, 11000);
+
+    return () => {
+      clearTimeout(timer);
+      clearTimeout(hideTimer);
+    };
+  }, []);
 
   useEffect(() => {
     // Apply Theme Color
@@ -87,14 +105,39 @@ const ThemeSettings = () => {
 
   return (
     <>
-      {/* Floating Toggle Button */}
-      <button
-        onClick={() => setOpen(true)}
-        className="fixed top-28 md:top-24 right-0 bg-white/10 backdrop-blur-md border border-white/10 border-r-0 rounded-l-xl p-3 z-50 text-white/80 hover:text-white transition-colors"
-        aria-label="Theme Settings"
-      >
-        <Settings size={22} className="animate-[spin_4s_linear_infinite]" />
-      </button>
+      {/* Floating Toggle Button & Hint */}
+      <div className="fixed top-28 md:top-24 right-0 z-50 flex items-center">
+        <AnimatePresence>
+          {showHint && (
+            <motion.div
+              initial={{ opacity: 0, x: 20, scale: 0.8 }}
+              animate={{ opacity: 1, x: 0, scale: 1 }}
+              exit={{ opacity: 0, x: 20, scale: 0.8 }}
+              className="mr-4 relative"
+            >
+              <div className="bg-white/10 backdrop-blur-xl text-white px-6 py-3 rounded-2xl shadow-2xl border border-white/20 flex flex-col gap-0.5 relative">
+                <span className="text-[13px] font-bold tracking-tight">Personalize Your View ✨</span>
+                <span className="text-[11px] text-white/70 font-medium">Change themes, fonts & styles</span>
+                
+                {/* Simple Tail */}
+                <div className="absolute top-1/2 -right-1 -translate-y-1/2 w-3 h-3 bg-white/10 backdrop-blur-xl rotate-45 border-r border-t border-white/20 -z-10" />
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+
+        <button
+          onClick={() => {
+            setOpen(true);
+            setShowHint(false);
+          }}
+          className="bg-white/10 backdrop-blur-md border border-white/10 border-r-0 rounded-l-xl p-3 text-white/80 hover:text-white transition-all hover:pl-5 group relative shadow-lg"
+          aria-label="Theme Settings"
+        >
+          <Settings size={22} className="group-hover:rotate-90 transition-transform duration-500" />
+          <div className="absolute inset-0 bg-white/5 rounded-l-xl opacity-0 group-hover:opacity-100 transition-opacity" />
+        </button>
+      </div>
 
       {/* Slide-out Panel */}
       <AnimatePresence>

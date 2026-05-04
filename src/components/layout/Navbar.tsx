@@ -48,7 +48,8 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-[100] transition-all duration-300 ${scrolled ? "bg-[#050a1c]/85 backdrop-blur-md border-b border-white/10 shadow-[0_4px_32px_rgba(0,0,0,0.4)] py-3" : "bg-transparent py-5"}`}
+      className={`fixed top-0 left-0 w-full z-[100] transition-all duration-300 ${scrolled ? "backdrop-blur-md border-b border-white/10 shadow-[0_4px_32px_rgba(0,0,0,0.4)] py-3" : "bg-transparent py-5"}`}
+      style={{ backgroundColor: scrolled ? 'color-mix(in srgb, var(--base-bg), transparent 15%)' : 'transparent' }}
     >
       <div className="mx-auto max-w-7xl px-8 lg:px-10 w-full">
         <nav className="flex items-center justify-between">
