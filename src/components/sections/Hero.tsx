@@ -51,10 +51,10 @@ const Hero = () => {
           <motion.div {...stagger(2)}>
             <TypeAnimation
               sequence={[
-                "Java Backend Developer", 2500,
-                "Spring Boot Engineer", 2500,
-                "REST API Specialist", 2500,
-                "Microservices Architect", 2500,
+                "Full Stack Developer", 2500,
+                "Backend Specialist", 2500,
+                "Java & Spring Boot", 2500,
+                "React & TypeScript", 2500,
               ]}
               repeat={Infinity}
               wrapper="p"
@@ -63,14 +63,14 @@ const Hero = () => {
           </motion.div>
 
           <motion.p className="hero-desc" {...stagger(3)}>
-            I'm a Java Backend Developer from Pune.<br />
+            I'm a Full Stack Developer from Mumbai, India.<br />
             Building scalable systems with <span className="hl">Spring Boot</span> and<br />
             modern web technologies.
           </motion.p>
 
           <motion.div className="hero-buttons" {...stagger(4)}>
             <motion.a
-              href="https://drive.google.com/file/d/172kiS7_MWU2Ah-JrllhaRCCcxPXWMj-4/view?usp=sharing"
+              href="https://drive.google.com/file/d/1EOaiuHoniGfGlHm_bl2jqezRbZnBIWGf/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
               className="btn-primary"
@@ -151,11 +151,13 @@ const Hero = () => {
           {/* Oval */}
           <motion.div
             className="profile-oval"
-            animate={{ boxShadow: [
-              "0 0 28px color-mix(in srgb, var(--theme-500) 50%, transparent), 0 0 70px color-mix(in srgb, var(--theme-500) 20%, transparent)",
-              "0 0 44px color-mix(in srgb, var(--theme-500) 80%, transparent), 0 0 100px color-mix(in srgb, var(--theme-500) 35%, transparent)",
-              "0 0 28px color-mix(in srgb, var(--theme-500) 50%, transparent), 0 0 70px color-mix(in srgb, var(--theme-500) 20%, transparent)",
-            ]}}
+            animate={{
+              boxShadow: [
+                "0 0 28px color-mix(in srgb, var(--theme-500) 50%, transparent), 0 0 70px color-mix(in srgb, var(--theme-500) 20%, transparent)",
+                "0 0 44px color-mix(in srgb, var(--theme-500) 80%, transparent), 0 0 100px color-mix(in srgb, var(--theme-500) 35%, transparent)",
+                "0 0 28px color-mix(in srgb, var(--theme-500) 50%, transparent), 0 0 70px color-mix(in srgb, var(--theme-500) 20%, transparent)",
+              ]
+            }}
             transition={{ duration: 2.8, repeat: Infinity, ease: "easeInOut" }}
           >
             <img src="/profile.png" alt="Nikhil Mali" />
@@ -192,13 +194,15 @@ const Hero = () => {
         <div className="follow-line" />
         {[
           { label: "Instagram", icon: <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram" className="w-4 h-4" />, href: "https://www.instagram.com/nikhil_mali_17/", bgColor: "linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)" },
-          { label: "LeetCode", icon: (
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="#ffa116">
-              <path d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.662-1.823.662s-1.357-.195-1.824-.662l-4.332-4.363c-.467-.467-.702-1.15-.702-1.863s.235-1.357.702-1.824l4.332-4.363c.467-.467 1.112-.662 1.824-.662.712 0 1.357.195 1.823.662l2.697 2.606c.514.515 1.311.498 1.79-.038.478-.535.438-1.396-.088-1.922l-2.697-2.606c-1.026-1.028-2.303-1.441-3.528-1.441-1.225 0-2.502.413-3.528 1.441l-4.332 4.363c-1.026 1.028-1.442 2.303-1.442 3.528 0 1.225.416 2.501 1.442 3.528l4.332 4.363c1.026 1.028 2.303 1.441 3.528 1.441 1.225 0 2.502-.413 3.528-1.441l2.697-2.607c.526-.526.566-1.387.088-1.922-.479-.536-1.276-.553-1.79-.038z" />
-              <path d="M12.43 12.32c-1.576 0-2.852 1.276-2.852 2.852 0 1.576 1.276 2.852 2.852 2.852 1.576 0 2.852-1.276 2.852-2.852 0-1.576-1.276-2.852-2.852-2.852z" />
-              <path d="M18.46 7.19l-3.993 3.993c-.204.204-.31.478-.31.753s.106.549.31.753c.416.416 1.09.416 1.506 0l3.993-3.993c.204-.204.31-.478.31-.753s-.106-.549-.31-.753c-.416-.416-1.09-.416-1.506 0z" />
-            </svg>
-          ), href: "https://leetcode.com/u/nikhilmali1225/", bgColor: "#000" },
+          {
+            label: "LeetCode", icon: (
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="#ffa116">
+                <path d="M16.102 17.93l-2.697 2.607c-.466.467-1.111.662-1.823.662s-1.357-.195-1.824-.662l-4.332-4.363c-.467-.467-.702-1.15-.702-1.863s.235-1.357.702-1.824l4.332-4.363c.467-.467 1.112-.662 1.824-.662.712 0 1.357.195 1.823.662l2.697 2.606c.514.515 1.311.498 1.79-.038.478-.535.438-1.396-.088-1.922l-2.697-2.606c-1.026-1.028-2.303-1.441-3.528-1.441-1.225 0-2.502.413-3.528 1.441l-4.332 4.363c-1.026 1.028-1.442 2.303-1.442 3.528 0 1.225.416 2.501 1.442 3.528l4.332 4.363c1.026 1.028 2.303 1.441 3.528 1.441 1.225 0 2.502-.413 3.528-1.441l2.697-2.607c.526-.526.566-1.387.088-1.922-.479-.536-1.276-.553-1.79-.038z" />
+                <path d="M12.43 12.32c-1.576 0-2.852 1.276-2.852 2.852 0 1.576 1.276 2.852 2.852 2.852 1.576 0 2.852-1.276 2.852-2.852 0-1.576-1.276-2.852-2.852-2.852z" />
+                <path d="M18.46 7.19l-3.993 3.993c-.204.204-.31.478-.31.753s.106.549.31.753c.416.416 1.09.416 1.506 0l3.993-3.993c.204-.204.31-.478.31-.753s-.106-.549-.31-.753c-.416-.416-1.09-.416-1.506 0z" />
+              </svg>
+            ), href: "https://leetcode.com/u/nikhilmali1225/", bgColor: "#000"
+          },
           { label: "LinkedIn", icon: <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn" className="w-4 h-4" />, href: "https://www.linkedin.com/in/nikhil-mali-70b79122a/", bgColor: "#0a66c2" },
         ].map(s => (
           <motion.a

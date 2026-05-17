@@ -2,23 +2,25 @@ import { motion } from "framer-motion";
 
 const skills = [
   { name: "Java",       level: 90, color: "#f89820" },
-  { name: "Spring Boot",level: 85, color: "#6db33f" },
-  { name: "DSA",         level: 92, color: "#a855f7" },
-  { name: "REST APIs",  level: 88, color: "#60a5fa" },
-  { name: "MySQL",      level: 80, color: "#00758f" },
-  { name: "Docker",     level: 70, color: "#2496ed" },
+  { name: "Spring Boot",level: 88, color: "#6db33f" },
+  { name: "React",      level: 85, color: "#61dafb" },
+  { name: "TypeScript", level: 80, color: "#3178c6" },
+  { name: "DSA",        level: 92, color: "#a855f7" },
+  { name: "REST APIs",  level: 90, color: "#60a5fa" },
 ];
 
 // Simple Icons CDN URLs
 const techStack = [
   { name: "Java",       icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
-  { name: "Spring",     icon: "https://cdn.simpleicons.org/springboot/6db33f" },
+  { name: "Spring Boot",icon: "https://cdn.simpleicons.org/springboot/6db33f" },
   { name: "React",      icon: "https://cdn.simpleicons.org/react/61dafb" },
   { name: "TypeScript", icon: "https://cdn.simpleicons.org/typescript/3178c6" },
+  { name: "FastAPI",    icon: "https://cdn.simpleicons.org/fastapi/009688" },
   { name: "MySQL",      icon: "https://cdn.simpleicons.org/mysql/4479a1" },
+  { name: "PostgreSQL", icon: "https://cdn.simpleicons.org/postgresql/4169e1" },
+  { name: "Redis",      icon: "https://cdn.simpleicons.org/redis/dc382d" },
+  { name: "AWS",        icon: "https://cdn.simpleicons.org/amazonaws/232F3E" },
   { name: "Docker",     icon: "https://cdn.simpleicons.org/docker/2496ed" },
-  { name: "Git",        icon: "https://cdn.simpleicons.org/git/f05032" },
-  { name: "Postman",    icon: "https://cdn.simpleicons.org/postman/ff6c37" },
 ];
 
 const Skills = () => (

@@ -12,59 +12,33 @@ const stats = [
 
 const experiences = [
   {
-    year: "Jan 2024 – Feb 2024",
-    role: "Java Development Intern",
-    company: "Oasis Infobyte",
-    location: "Remote",
-    desc: "Gained hands-on experience in Java development and logic building through real-world assignments.",
+    year: "May 2024 – Present",
+    role: "Junior Software Developer",
+    company: "Aniruddha Telemetry Systems (ATS)",
+    location: "Mumbai, India",
+    desc: "Took ownership of feature development, production issue resolution, and product enhancements.",
     points: [
-      "Developed an ATM Interface and an Online Examination System using core Java.",
-      "Applied Object-Oriented Programming (OOP) principles to create modular code.",
-      "Collaborated with mentors to refine application logic and performance."
+      "Developed scalable backend modules, REST APIs, and core business logic for products including PO Module, IOK Printroom, ULIP, and Digimines.",
+      "Improved system performance by optimizing database queries, resolving the N+1 query issue, and reducing large data load time to nearly 2-3 seconds.",
+      "Took ownership of feature development, production issue resolution, and product enhancements while contributing to scalable architecture and modern UI development."
     ],
     color: "#3b82f6",
-  },
-  {
-    year: "Dec 2023 – Jan 2024",
-    role: "Java Development Intern",
-    company: "CodSoft",
-    location: "Remote",
-    desc: "Enhanced proficiency in Java and software design patterns through project-based learning.",
-    points: [
-      "Implemented a robust Word Counter and a dynamic Number Game.",
-      "Explored GUI development using Java Swing for interactive user experiences.",
-      "Focused on clean code practices and comprehensive documentation."
-    ],
-    color: "#8b5cf6",
   }
 ];
 
 const education = [
   {
-    year: "2021 – 2025",
+    year: "June 2021 – May 2025",
     role: "B.E. Information Technology",
-    company: "Vasantdada Patil Pratishthan's College of Engineering",
+    company: "Vasantdada Patil College of Engineering",
     location: "Mumbai, India",
-    desc: "Currently pursuing engineering with a strong focus on information systems and software development.",
+    desc: "Pursuing engineering with a strong focus on information systems and software development.",
     points: [
-      "Current CGPA: 7.90",
+      "CGPA: 7.91",
       "Specialized in Software Engineering, DBMS, and Distributed Systems.",
       "Actively involved in technical events and coding competitions."
     ],
     color: "#06b6d4",
-  },
-  {
-    year: "2019 – 2021",
-    role: "HSC (Science)",
-    company: "Patkar and Varde College of Science",
-    location: "Mumbai, India",
-    desc: "Completed Higher Secondary education with a focus on Mathematics and Pure Sciences.",
-    points: [
-      "Score: 82.67%",
-      "Developed a strong foundation in Physics, Chemistry, and Mathematics.",
-      "Active member of the college science club."
-    ],
-    color: "#10b981",
   }
 ];
 
@@ -154,9 +128,9 @@ const About = () => (
         transition={{ duration: 0.7 }}
       >
         <p className="about-lead">
-          I'm <span className="text-blue font-semibold">Nikhil Mali</span>, a passionate Java Backend
-          Developer based in Pune, India. I specialise in building robust, scalable,
-          and high-performance server-side applications.
+          I'm <span className="text-blue font-semibold">Nikhil Mali</span>, a passionate Backend-focused Full Stack
+          Developer based in Mumbai, India. I specialise in building robust, scalable,
+          and high-performance server-side applications and modern UIs.
         </p>
         <p className="about-body">
           With hands-on experience in <strong>Spring Boot</strong>, <strong>REST APIs</strong>,
