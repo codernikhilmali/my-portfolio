@@ -7,7 +7,7 @@ const ThemeSettings = () => {
   const [showHint, setShowHint] = useState(false);
   
   // Settings State
-  const [color, setColor] = useState(() => localStorage.getItem("theme-color") || "blue");
+  const [color, setColor] = useState(() => localStorage.getItem("theme-color") || "rose");
   const [font, setFont] = useState(() => localStorage.getItem("theme-font") || "inter");
   const [bg, setBg] = useState(() => localStorage.getItem("theme-bg") || "network");
   const [baseBg, setBaseBg] = useState(() => localStorage.getItem("theme-base-bg") || "navy");

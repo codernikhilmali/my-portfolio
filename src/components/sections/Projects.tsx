@@ -12,6 +12,8 @@ const allProjects = [
     border: "rgba(59,130,246,0.3)",
     glow: "rgba(59,130,246,0.35)",
     headerColor: "linear-gradient(135deg,#1e40af,#0e7490)",
+    codeUrl: "https://github.com/codernikhilmali/Ai-db-schema-visualiser",
+    liveUrl: "https://glistening-nurturing-production.up.railway.app/",
   },
   {
     title: "PO & Inventory Management",
@@ -103,14 +105,36 @@ const Projects = () => {
                 ))}
               </div>
 
-              <div className="project-actions">
-                <motion.button className="project-link" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                  <GitBranch size={13} /> Code
-                </motion.button>
-                <motion.button className="project-link" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                  Live <ExternalLink size={13} />
-                </motion.button>
-              </div>
+              {(p.codeUrl || p.liveUrl) && (
+                <div className="project-actions">
+                  {p.codeUrl && (
+                    <motion.a
+                      href={p.codeUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link"
+                      style={{ textDecoration: "none" }}
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      <GitBranch size={13} /> Code
+                    </motion.a>
+                  )}
+                  {p.liveUrl && (
+                    <motion.a
+                      href={p.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link"
+                      style={{ textDecoration: "none" }}
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      Live <ExternalLink size={13} />
+                    </motion.a>
+                  )}
+                </div>
+              )}
             </div>
           </motion.div>
         ))}

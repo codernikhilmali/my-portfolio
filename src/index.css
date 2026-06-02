@@ -11,11 +11,11 @@
 }
 
 :root {
-  --theme-300: #93c5fd;
-  --theme-400: #60a5fa;
-  --theme-500: #3b82f6;
-  --theme-600: #2563eb;
-  --theme-700: #1d4ed8;
+  --theme-300: #fda4af;
+  --theme-400: #fb7185;
+  --theme-500: #f43f5e;
+  --theme-600: #e11d48;
+  --theme-700: #be123c;
 }
 
 [data-theme="emerald"] {
@@ -34,12 +34,12 @@
   --theme-700: #7e22ce;
 }
 
-[data-theme="rose"] {
-  --theme-300: #fda4af;
-  --theme-400: #fb7185;
-  --theme-500: #f43f5e;
-  --theme-600: #e11d48;
-  --theme-700: #be123c;
+[data-theme="blue"] {
+  --theme-300: #93c5fd;
+  --theme-400: #60a5fa;
+  --theme-500: #3b82f6;
+  --theme-600: #2563eb;
+  --theme-700: #1d4ed8;
 }
 
 [data-theme="amber"] {
