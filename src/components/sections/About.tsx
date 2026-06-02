@@ -4,8 +4,8 @@ import { useRef, useEffect, useState } from "react";
 import { Briefcase, GraduationCap, Calendar, MapPin } from "lucide-react";
 
 const stats = [
-  { value: 2,   suffix: "+", label: "Years Experience" },
-  { value: 20,  suffix: "+", label: "Projects Completed" },
+  { value: 1,   suffix: "+", label: "Years Experience" },
+  { value: 15,  suffix: "+", label: "Projects Completed" },
   { value: 200, suffix: "+", label: "DSA Problems Solved" },
   { value: 5,   suffix: "+", label: "Technologies" },
 ];

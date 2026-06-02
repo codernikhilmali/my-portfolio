@@ -27,8 +27,8 @@ function useCountUp(target: number, duration = 1600) {
 
 /* ─── Hero ──────────────────────────────────────────────── */
 const Hero = () => {
-  const { count: expCount, ref: expRef } = useCountUp(2);
-  const { count: projCount, ref: projRef } = useCountUp(20);
+  const { count: expCount, ref: expRef } = useCountUp(1);
+  const { count: projCount, ref: projRef } = useCountUp(15);
   const { count: dsaCount, ref: dsaRef } = useCountUp(200);
 
   const stagger = (i: number) => ({
